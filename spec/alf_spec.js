@@ -4,7 +4,7 @@ describe('Help Alf', function(){
 	});
 
 	it('should return [0,0] for given map', function(){
-		expect(spaceship.add("..........\n..........\n..........\n..........\n..........\n..........")).toEqual([0,0]);
+		expect(spaceship.add("..........\n..........\n..........\n..........\n..........\nX..........")).toEqual([0,0]);
 	});
 	it('should return [3,1] for given map', function(){
 		expect(spaceship.add("..........\n..........\n..........\n..........\n...X.......\n..........")).toEqual([3,1]);
@@ -20,5 +20,8 @@ describe('Help Alf', function(){
 	});
 	it('should return [9,5] for given map', function(){
 		expect(spaceship.add(".........X.\n..........\n..........\n..........\n..........\n..........")).toEqual([9,5]);
+	});
+	it('should return "spaceship lost forever" for given map', function(){
+		expect(spaceship.add("..........\n..........\n..........\n..........\n..........\n..........")).toEqual("spaceship lost forever");
 	});
 });

@@ -10,9 +10,7 @@ SearchSpaceship.prototype.add = function(map){
             }
         }
     }
-	if (lines.length >= 5) {
-        return [0, 0];
-    } else {
-        return "Spaceship lost forever.";
-    }
+	
+        return "spaceship lost forever";
+    
 };
