@@ -15,5 +15,8 @@ describe('Help Alf', function(){
 	it('should return [1,3] for given map', function(){
 		expect(spaceship.add("..........\n..........\n.X.........\n..........\n..........\n..........")).toEqual([1,3]);
 	});
+	it('should return [5,4] for given map', function(){
+		expect(spaceship.add("..........\n.....X.....\n..........\n..........\n..........\n..........")).toEqual([5,4]);
+	});
 
 });
